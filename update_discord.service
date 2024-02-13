@@ -1,0 +1,14 @@
+[Unit]
+Description=auto update discord
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=idle
+User=root
+Group=root
+ExecStart=/bin/bash /opt/auto_scripts/update_discord.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
