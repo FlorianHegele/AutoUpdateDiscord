@@ -7,7 +7,7 @@ StartLimitIntervalSec=0
 Type=idle
 User=root
 Group=root
-ExecStart=/bin/bash /opt/auto_scripts/update_discord.sh
+ExecStart=/bin/bash /opt/AutoUpdateDiscord/update_discord.sh
 RemainAfterExit=yes
 
 [Install]
